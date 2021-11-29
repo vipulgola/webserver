@@ -18,7 +18,7 @@ pipeline{
         }
         stage('package upload'){
             steps{
-                sh 'docker run -it --rm -p 80:80 vipulgola/webserver:0.0.1'
+                sh 'docker run --rm -p 80:80 vipulgola/webserver:0.0.1'
             }
         }
     }
